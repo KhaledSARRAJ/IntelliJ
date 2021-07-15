@@ -1,0 +1,12 @@
+*****Supprimer le fichier de config intellij*****
+
+cd "C:%HOMEPATH%\.IntelliJIdea*\config"
+rmdir "eval" /s /q
+del "options\other.xml"
+reg delete "HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea" /f
+
+****si ca marche pas la premiere ligne******
+cd %APPDATA%\JetBrains\IntelliJIdea*
+
+Si bloquer :
+https://gist.github.com/VVATOR/c07eeb34e149feab122ca8bb71b3a17c
